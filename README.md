@@ -1,6 +1,6 @@
 # Conecta Futuro
 
-![Imagem demonstrativa do site.](image.png)
+![Foto demonstrativa do site.](img-demonstrativa.png)
 
 O **Conecta Futuro** é um projeto acadêmico de desenvolvimento front-end que apresenta uma plataforma digital para divulgação de ações sociais, projetos de inclusão digital, oportunidades de voluntariado e campanhas de doação.
 

@@ -101,3 +101,6 @@ O uso de um servidor local é recomendado porque a navegação da aplicação ut
 
 Os cadastros são armazenados no navegador com `localStorage`. Apenas informações básicas são persistidas para fins demonstrativos. Dados sensíveis, como CPF, telefone e endereço, não são armazenados.
 
+## Deploy
+
+https://yazancan.github.io/conecta-futuro/html/index.html

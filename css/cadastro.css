@@ -1,0 +1,188 @@
+main {
+  max-width: 900px;
+}
+
+main > h1,
+main > p {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-4);
+  margin-top: var(--espaco-5);
+}
+
+fieldset {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--espaco-3);
+  margin: 0;
+  padding: var(--espaco-4);
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-md);
+  box-shadow: var(--sombra);
+}
+
+legend {
+  padding: 0 var(--espaco-2);
+  font-size: var(--texto-lg);
+  font-weight: bold;
+  color: var(--cor-primaria);
+}
+
+fieldset p {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-2);
+  margin: 0;
+}
+
+label {
+  font-weight: bold;
+  color: var(--cor-texto);
+}
+
+input,
+select {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  font: inherit;
+  color: var(--cor-texto);
+  background-color: var(--cor-superficie);
+  border: 2px solid var(--cor-borda);
+  border-radius: var(--raio-sm);
+  transition:
+    border-color var(--transicao),
+    background-color var(--transicao),
+    box-shadow var(--transicao);
+}
+
+input:hover,
+select:hover {
+  border-color: var(--cor-secundaria);
+}
+
+input:focus,
+select:focus {
+  border-color: var(--cor-primaria);
+  box-shadow: 0 0 0 3px rgb(7 75 150 / 15%);
+  outline: none;
+}
+
+input:not(:placeholder-shown):valid {
+  border-color: var(--cor-sucesso);
+  background-color: #f0fff5;
+}
+
+input:not(:placeholder-shown):invalid {
+  border-color: var(--cor-erro);
+  background-color: #fff4f2;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 20px;
+  min-height: 20px;
+  margin: 0 var(--espaco-2) 0 0;
+  accent-color: var(--cor-primaria);
+}
+
+fieldset:nth-of-type(2) > input,
+fieldset:nth-of-type(2) > label {
+  align-self: center;
+}
+
+fieldset:nth-of-type(2) > input[type="radio"] {
+  grid-column: span 1;
+}
+
+fieldset:nth-of-type(2) > label {
+  grid-column: span 5;
+}
+
+fieldset:nth-of-type(2) p:last-child {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+}
+
+.acoes-formulario {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: var(--espaco-3);
+}
+
+.acoes-formulario button {
+  min-height: 54px;
+  margin: 0;
+}
+
+.acoes-formulario button[type="reset"] {
+  color: var(--cor-primaria);
+  background-color: transparent;
+  border: 2px solid var(--cor-primaria);
+}
+
+.acoes-formulario button[type="reset"]:hover {
+  color: var(--cor-superficie);
+  background-color: var(--cor-primaria);
+}
+
+@media (min-width: 480px) {
+  fieldset {
+    padding: var(--espaco-5);
+  }
+}
+
+@media (min-width: 768px) {
+  fieldset:first-of-type p {
+    grid-column: span 6;
+  }
+
+  fieldset:first-of-type p:nth-of-type(1),
+  fieldset:first-of-type p:nth-of-type(6) {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 1024px) {
+  form {
+    gap: var(--espaco-5);
+  }
+}
+
+@media (min-width: 1280px) {
+  fieldset {
+    padding: var(--espaco-6);
+  }
+}
+
+@media (min-width: 1440px) {
+  main {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 479px) {
+  .acoes-formulario {
+    flex-direction: column;
+  }
+
+  .acoes-formulario button {
+    width: 100%;
+  }
+
+  fieldset:nth-of-type(2) > input[type="radio"] {
+    grid-column: span 2;
+  }
+
+  fieldset:nth-of-type(2) > label {
+    grid-column: span 10;
+  }
+}

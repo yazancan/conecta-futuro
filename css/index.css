@@ -1,0 +1,119 @@
+main {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--espaco-5);
+}
+
+main section {
+  grid-column: 1 / -1;
+}
+
+main section:first-child {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  align-items: center;
+  gap: var(--espaco-4);
+  padding: var(--espaco-5);
+  background-color: var(--cor-superficie);
+  border-radius: var(--raio-md);
+  box-shadow: var(--sombra);
+}
+
+main section:first-child h1,
+main section:first-child h2,
+main section:first-child p,
+main section:first-child > a {
+  grid-column: 1 / -1;
+}
+
+main section:first-child picture {
+  grid-column: 1 / -1;
+  grid-row: auto;
+}
+
+main section:first-child picture img {
+  width: 100%;
+  border-radius: var(--raio-md);
+}
+
+main section:first-child > a {
+  justify-self: start;
+  padding: 12px 20px;
+  font-weight: bold;
+  color: var(--cor-superficie);
+  background-color: var(--cor-destaque);
+  border-radius: var(--raio-sm);
+  transition:
+    background-color var(--transicao),
+    transform var(--transicao),
+    box-shadow var(--transicao);
+}
+
+main section:first-child > a:hover {
+  color: var(--cor-superficie);
+  background-color: #9c4900;
+  box-shadow: var(--sombra-destaque);
+  transform: translateY(-2px);
+}
+
+main section:last-child {
+  padding: var(--espaco-5);
+  background-color: var(--cor-primaria);
+  border-radius: var(--raio-md);
+}
+
+main section:last-child h2,
+main section:last-child p,
+main section:last-child a {
+  color: var(--cor-superficie);
+}
+
+address {
+  font-style: normal;
+}
+
+address p {
+  margin-bottom: var(--espaco-2);
+}
+
+@media (min-width: 480px) {
+  main {
+    gap: var(--espaco-4);
+  }
+}
+
+@media (min-width: 768px) {
+  main section:first-child picture {
+    grid-column: 7 / -1;
+    grid-row: 1 / span 5;
+  }
+
+  main section:first-child h1,
+  main section:first-child h2,
+  main section:first-child p,
+  main section:first-child > a {
+    grid-column: 1 / 7;
+  }
+}
+
+@media (min-width: 1024px) {
+  main section:first-child {
+    padding: var(--espaco-6);
+  }
+
+  main section:last-child {
+    grid-column: 2 / 12;
+  }
+}
+
+@media (min-width: 1280px) {
+  main section:first-child {
+    gap: var(--espaco-5);
+  }
+}
+
+@media (min-width: 1440px) {
+  main section:first-child h1 {
+    font-size: 42px;
+  }
+}

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Conecta Futuro</title>
+  <desc id="desc">Três pessoas reunidas ao redor de um computador</desc>
+
+  <!-- Pessoa central -->
+  <circle cx="32" cy="14" r="7" fill="#074b96"/>
+  <path d="M20 25c3-5 7-7 12-7s9 2 12 7l-5 12H25z" fill="#074b96"/>
+
+  <!-- Pessoas laterais -->
+  <circle cx="13" cy="25" r="6" fill="#08b9bd"/>
+  <path d="M5 46c0-10 3-15 9-15 5 0 8 4 11 9l-7 7z" fill="#08b9bd"/>
+
+  <circle cx="51" cy="25" r="6" fill="#ff8a00"/>
+  <path d="M59 46c0-10-3-15-9-15-5 0-8 4-11 9l7 7z" fill="#ff8a00"/>
+
+  <!-- Computador -->
+  <rect x="17" y="35" width="30" height="18" rx="3" fill="#074b96"/>
+  <circle cx="32" cy="44" r="2.5" fill="#ffffff"/>
+  <rect x="13" y="53" width="38" height="5" rx="2.5" fill="#05366d"/>
+</svg>

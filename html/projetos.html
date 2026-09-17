@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Projetos e formas de apoiar a Conecta Futuro."
+    />
+    <title>Conecta Futuro | Projetos</title>
+    <link rel="icon" href="../img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/projetos.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">
+        <img src="../img/logo-conecta-futuro.png" alt="Conecta Futuro" />
+      </a>
+
+      <!-- Controle do menu mobile -->
+      <input
+        type="checkbox"
+        id="menu-toggle"
+        class="menu-toggle"
+        aria-label="Abrir ou fechar menu"
+      />
+
+      <!-- Ícone do menu sanduíche -->
+      <label for="menu-toggle" class="menu-hamburguer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav-principal" aria-label="Navegação principal">
+        <ul class="menu">
+          <li>
+            <a href="index.html">Início</a>
+          </li>
+
+          <li class="item-dropdown">
+            <a href="projetos.html">Projetos</a>
+
+            <ul class="submenu">
+              <li>
+                <a href="projetos.html#oficinas">Oficinas digitais</a>
+              </li>
+
+              <li>
+                <a href="projetos.html#voluntariado">Voluntariado</a>
+              </li>
+
+              <li>
+                <a href="projetos.html#doacoes">Doações</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="cadastro.html">Cadastre-se</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-labelledby="titulo-projetos">
+        <h1 id="titulo-projetos">Nossos projetos</h1>
+        <p>
+          Conheça as iniciativas desenvolvidas para ampliar o acesso à
+          tecnologia, à educação e ao mercado de trabalho.
+        </p>
+      </section>
+
+      <!-- Os componentes abaixo são criados por templates.js. -->
+      <div id="projetos-dinamicos" hidden></div>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2026 Conecta Futuro. Projeto fictício, objeto de estudo da
+        graduação em Análise e Desenvolvimento de Sistemas.
+      </p>
+    </footer>
+
+    <script type="module" src="../js/templates.js"></script>
+  </body>
+</html>

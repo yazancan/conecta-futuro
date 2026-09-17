@@ -1,0 +1,107 @@
+main {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--espaco-4);
+}
+
+main > section,
+main > article {
+  grid-column: span 12;
+}
+
+main > section:first-child {
+  padding: var(--espaco-5);
+  color: var(--cor-superficie);
+  background: linear-gradient(
+    135deg,
+    var(--cor-primaria),
+    var(--cor-secundaria)
+  );
+  border-radius: var(--raio-md);
+}
+
+main > section:first-child h1,
+main > section:first-child p {
+  color: var(--cor-superficie);
+}
+
+main > article,
+main > section:not(:first-child) {
+  display: flex;
+  flex-direction: column;
+  padding: var(--espaco-4);
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-md);
+  box-shadow: var(--sombra);
+  transition:
+    border-color var(--transicao),
+    transform var(--transicao),
+    box-shadow var(--transicao);
+}
+
+main > article:hover,
+main > section:not(:first-child):hover,
+main > article:focus-within,
+main > section:not(:first-child):focus-within {
+  border-color: var(--cor-secundaria);
+  box-shadow: var(--sombra-destaque);
+  transform: translateY(-4px);
+}
+
+main ul {
+  padding-left: var(--espaco-4);
+}
+
+main li {
+  margin-bottom: var(--espaco-2);
+}
+
+main > article a,
+main > section:not(:first-child) > a {
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 10px 16px;
+  font-weight: bold;
+  color: var(--cor-superficie);
+  background-color: var(--cor-primaria);
+  border-radius: var(--raio-sm);
+}
+
+main > article a:hover,
+main > section:not(:first-child) > a:hover {
+  color: var(--cor-superficie);
+  background-color: var(--cor-primaria-escura);
+}
+
+@media (min-width: 480px) {
+  main {
+    gap: var(--espaco-4);
+  }
+}
+
+@media (min-width: 768px) {
+  main > article,
+  main > section:not(:first-child) {
+    grid-column: span 6;
+  }
+}
+
+@media (min-width: 1024px) {
+  main > article,
+  main > section:not(:first-child) {
+    grid-column: span 4;
+  }
+}
+
+@media (min-width: 1280px) {
+  main > section:first-child {
+    padding: var(--espaco-6);
+  }
+}
+
+@media (min-width: 1440px) {
+  main {
+    gap: var(--espaco-5);
+  }
+}

@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ONG de inclusão e capacitação digital." />
+    <title>Conecta Futuro | Início</title>
+    <link rel="icon" href="../img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+
+    <link id="css-pagina" rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">
+        <img src="../img/logo-conecta-futuro.png" alt="Conecta Futuro" />
+      </a>
+
+      <!-- Controle do menu mobile -->
+      <input
+        type="checkbox"
+        id="menu-toggle"
+        class="menu-toggle"
+        aria-label="Abrir ou fechar menu"
+      />
+
+      <!-- Ícone do menu sanduíche -->
+      <label for="menu-toggle" class="menu-hamburguer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav-principal" aria-label="Navegação principal">
+        <ul class="menu">
+          <li>
+            <a href="#inicio" data-route="inicio"> Início </a>
+          </li>
+
+          <li class="item-dropdown">
+            <a href="#projetos" data-route="projetos"> Projetos </a>
+
+            <ul class="submenu">
+              <li>
+                <a
+                  href="#projetos/oficinas"
+                  data-route="projetos"
+                  data-section="oficinas"
+                >
+                  Oficinas digitais
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#projetos/voluntariado"
+                  data-route="projetos"
+                  data-section="voluntariado"
+                >
+                  Voluntariado
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#projetos/doacoes"
+                  data-route="projetos"
+                  data-section="doacoes"
+                >
+                  Doações
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#cadastro" data-route="cadastro"> Cadastre-se </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="app">
+      <section aria-labelledby="titulo-principal">
+        <h1 id="titulo-principal">Conecta Futuro</h1>
+
+        <picture>
+          <source srcset="../img/inclusao-digital.png" type="image/png" />
+          <source srcset="../img/inclusao-digital.png" type="image/png" />
+          <img
+            src="../img/inclusao-digital.png"
+            alt="Educadora auxiliando jovens em uma oficina de inclusão digital"
+          />
+        </picture>
+
+        <h2>Transformando vidas por meio da inclusão digital</h2>
+
+        <p>
+          A Conecta Futuro é uma organização social que oferece capacitação
+          digital gratuita para jovens e adultos em situação de vulnerabilidade.
+        </p>
+
+        <p>
+          Nossa missão é ampliar a autonomia, facilitar o acesso à educação e
+          preparar pessoas para novas oportunidades profissionais.
+        </p>
+
+        <a href="#projetos" data-route="projetos">Conheça nossos projetos</a>
+      </section>
+
+      <section aria-labelledby="titulo-contato">
+        <h2 id="titulo-contato">Entre em contato</h2>
+        <address>
+          <p>
+            E-mail:
+            <a href="mailto:contato@conectafuturo.org">
+              contato@conectafuturo.org
+            </a>
+          </p>
+          <p>
+            Telefone:
+            <a href="tel:+551912345678">(19) 1234-5678</a>
+          </p>
+          <p>Campinas – SP</p>
+        </address>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2026 Conecta Futuro. Projeto fictício, objeto de estudo da
+        graduação em Análise e Desenvolvimento de Sistemas.
+      </p>
+    </footer>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

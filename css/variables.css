@@ -1,0 +1,39 @@
+:root {
+  /* Cores principais */
+  --cor-primaria: #074b96;
+  --cor-primaria-escura: #05366d;
+  --cor-secundaria: #008c91;
+  --cor-destaque: #c65d00;
+
+  /* Cores neutras e funcionais */
+  --cor-fundo: #f5f8fc;
+  --cor-superficie: #ffffff;
+  --cor-texto: #172033;
+  --cor-texto-claro: #4b5563;
+  --cor-borda: #cbd5e1;
+  --cor-sucesso: #237a44;
+  --cor-erro: #b42318;
+
+  /* Tipografia */
+  --fonte-principal: Arial, Helvetica, sans-serif;
+  --texto-xs: 12px;
+  --texto-sm: 14px;
+  --texto-md: 16px;
+  --texto-lg: 24px;
+  --texto-xl: 36px;
+
+  /* Espaçamentos */
+  --espaco-1: 4px;
+  --espaco-2: 8px;
+  --espaco-3: 16px;
+  --espaco-4: 24px;
+  --espaco-5: 32px;
+  --espaco-6: 48px;
+
+  /* Outros padrões */
+  --raio-sm: 6px;
+  --raio-md: 12px;
+  --sombra: 0 4px 16px rgb(23 32 51 / 12%);
+  --sombra-destaque: 0 8px 24px rgb(23 32 51 / 18%);
+  --transicao: 0.3s ease;
+}
